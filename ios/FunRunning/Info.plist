@@ -28,13 +28,25 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>localhost</key>
+			<key>New Exception Domain</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
 				<true/>
 			</dict>
 		</dict>
 	</dict>
+	 <key>NSMotionUsageDescription</key>
+  	<string>원활한 서비를 제공드리기 위해 요청합니다.</string>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>원활한 서비를 제공드리기 위해 요청합니다.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>원활한 서비를 제공드리기 위해 요청합니다.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Share workout data with other apps.</string>
+	<key>NSLocalizedDescription</key>
+	<string>Share workout data with other apps.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
 	<key>UILaunchStoryboardName</key>

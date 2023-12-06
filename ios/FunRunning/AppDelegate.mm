@@ -22,5 +22,8 @@
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
 }
-
+- (BOOL)concurrentRootEnabled
+{
+  return true;
+}
 @end
