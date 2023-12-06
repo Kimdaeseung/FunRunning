@@ -1,0 +1,51 @@
+{
+	"mt-[10px]": {
+		"style": {
+			"marginTop": 10
+		}
+	},
+	"h-full": {
+		"style": {
+			"height": "100%"
+		}
+	},
+	"w-full": {
+		"style": {
+			"width": "100%"
+		}
+	},
+	"items-center": {
+		"style": {
+			"alignItems": "center"
+		}
+	},
+	"justify-center": {
+		"style": {
+			"justifyContent": "center"
+		}
+	},
+	"bg-black": {
+		"style": {
+			"--tw-bg-opacity": 1,
+			"backgroundColor": "rgb(0 0 0 / var(--tw-bg-opacity))"
+		}
+	},
+	"text-26": {
+		"style": {
+			"fontSize": 26,
+			"lineHeight": 30
+		}
+	},
+	"text-white": {
+		"style": {
+			"--tw-text-opacity": 1,
+			"color": "rgb(255 255 255 / var(--tw-text-opacity))"
+		}
+	},
+	"text-yellow-300": {
+		"style": {
+			"--tw-text-opacity": 1,
+			"color": "rgb(238 228 195 / var(--tw-text-opacity))"
+		}
+	}
+}
