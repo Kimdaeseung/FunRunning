@@ -1,7 +1,17 @@
 {
+	"absolute": {
+		"style": {
+			"position": "absolute"
+		}
+	},
 	"mt-[10px]": {
 		"style": {
 			"marginTop": 10
+		}
+	},
+	"mt-[20px]": {
+		"style": {
+			"marginTop": 20
 		}
 	},
 	"h-full": {
