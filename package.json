@@ -40,6 +40,7 @@
     "react-native": "0.72.7",
     "react-native-health": "^1.18.0",
     "react-native-permissions": "^4.0.0",
+    "react-native-svg": "^14.1.0",
     "tailwind-rn": "^4.2.0"
   },
   "devDependencies": {
