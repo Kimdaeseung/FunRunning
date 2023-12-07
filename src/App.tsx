@@ -33,18 +33,35 @@ import {TailwindProvider, useTailwind} from 'tailwind-rn';
 import utilities from '../tailwind.json';
 import appleHealthKit, {HealthInputOptions, HealthKitPermissions} from 'react-native-health';
 import { PERMISSIONS, request, RESULTS } from 'react-native-permissions';
+import { Circle, Svg } from 'react-native-svg';
+
+const MAX_RUN = 1000;
 
 
 interface IMyComponent{
   steps: number;
+  strokeWidth?: number;
+  radius?: number;
 }
 
-const MyComponent = ({steps}: IMyComponent) => {
+const MyComponent = ({ strokeWidth = 20, radius = 100, steps}: IMyComponent) => {
   const tw = useTailwind();
+
+  const innerradius = radius - strokeWidth / 2;
+  const circumference = 2 * Math.PI * innerradius;
+
+  const run_progress = steps / MAX_RUN;
 
   return (
     <View style={tw('w-full h-full bg-black items-center justify-center')}>
-      <View style={tw('items-center justify-center')}>
+      <View style={{width:radius * 2, height:radius * 2, alignSelf:'center'} }>
+        <Svg>
+          <Circle r={innerradius} cx={radius} cy={radius} originX={radius} originY={radius} strokeWidth={strokeWidth} stroke={'#EE0F55'} opacity={0.2} />
+          <Circle r={innerradius} cx={radius} cy={radius} originX={radius} originY={radius} fillOpacity={0} strokeWidth={strokeWidth} stroke={'#EE0F55'} 
+          rotation="90" strokeDasharray={[circumference * run_progress,circumference]} strokeLinecap="round" />
+        </Svg>
+      </View>
+      <View style={tw('items-center justify-center mt-[20px]')}>
       <Text style={[tw('text-yellow-300 text-26')]}>너의 걸음수</Text>
       <Text style={[tw('mt-[10px] text-white text-26')]}>{steps}</Text>
       </View>
